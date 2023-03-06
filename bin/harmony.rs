@@ -1,44 +1,44 @@
 use diatonic::{scale_builder, octave, semitones};
 
 fn main() {
-    // let note = 'C';
-    // let modes = [
-    //     "major",
-    //     "ionian",
-    //     "dorian",
-    //     "phrygian",
-    //     "lydian",
-    //     "mixolyd",
-    //     "aeolian",
-    //     "minor",
-    //     "locrian",
-    // ];
-    // println!("Root note clean");
-    // for i in modes {
-	// 	    println!("{i}:   \t{}", scale_builder(note, ' ', i));
-    // }
-    // println!("Root note sharp");
-    // for i in modes {
-    //     println!("{i}:   \t{}", scale_builder(note, '#', i));
-    // }
-    // println!("Root note flat");
-    // for i in modes {
-    //     println!("{i}:   \t{}", scale_builder('d', 'b', i));
-    // }
+    let note = 'C';
+    let modes = [
+        "major",
+        "ionian",
+        "dorian",
+        "phrygian",
+        "lydian",
+        "mixolyd",
+        "aeolian",
+        "minor",
+        "locrian",
+    ];
+    println!("Root note clean");
+    for i in modes {
+		    println!("{i}:   \t{}", scale_builder(note, ' ', i));
+    }
+    println!("Root note sharp");
+    for i in modes {
+        println!("{i}:   \t{}", scale_builder(note, '#', i));
+    }
+    println!("Root note flat");
+    for i in modes {
+        println!("{i}:   \t{}", scale_builder('d', 'b', i));
+    }
 
-    // println!("Test wrong root note swap");
+    println!("Test wrong root note swap");
 
-    // println!("F  dorian: \t{}", scale_builder('F', ' ', "dorian"));
-    // println!("E# dorian: \t{}", scale_builder('E', '#', "dorian"));
-    // println!("E  phrygian: \t{}", scale_builder('E', ' ', "phrygian"));
-    // println!("Fb phrygian: \t{}", scale_builder('F', 'b', "phrygian"));
+    println!("F  dorian: \t{}", scale_builder('F', ' ', "dorian"));
+    println!("E# dorian: \t{}", scale_builder('E', '#', "dorian"));
+    println!("E  phrygian: \t{}", scale_builder('E', ' ', "phrygian"));
+    println!("Fb phrygian: \t{}", scale_builder('F', 'b', "phrygian"));
 
-    // println!("C  mixolydian: \t{}", scale_builder('C', ' ', "mixolydian"));
-    // println!("H# mixolydian: \t{}", scale_builder('H', '#', "mixolydian"));
-    // println!("H  lydian: \t{}", scale_builder('H', ' ', "lydian"));
-    // println!("Cb lydian: \t{}", scale_builder('C', 'b', "lydian"));
+    println!("C  mixolydian: \t{}", scale_builder('C', ' ', "mixolydian"));
+    println!("H# mixolydian: \t{}", scale_builder('H', '#', "mixolydian"));
+    println!("H  lydian: \t{}", scale_builder('H', ' ', "lydian"));
+    println!("Cb lydian: \t{}", scale_builder('C', 'b', "lydian"));
 
-    // println!("{}", octave())
+    println!("{}", octave());
 
     println!("{}", semitones("majoR"))
 }
