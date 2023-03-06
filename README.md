@@ -3,9 +3,9 @@
 This library builds any diatonic scale from any root note
 
 Run:
-'''bash
+```
 cargo run --bin harmony
-'''
+```
 
 I started this project at december 2021 after 1.5 month of studying Rust. Year later I made a brand new version. But the idea is the same: build any of 7 diatonic scales using sharps and flats.
 
