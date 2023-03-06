@@ -38,6 +38,9 @@ fn main() {
     println!("H  lydian: \t{}", scale_builder('H', ' ', "lydian"));
     println!("Cb lydian: \t{}", scale_builder('C', 'b', "lydian"));
 
+    println!("{}", scale_builder('Q', 'b', "major"));
+    println!("{}", scale_builder('C', 'Q', "minor"));
+
     println!("{}", octave());
 
     println!("{}", semitones("majoR"))

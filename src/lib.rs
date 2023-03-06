@@ -35,8 +35,8 @@ pub fn semitones(scale: &str) -> String {
 #[allow(unused)]
 pub fn scale_builder(note: char, acc: char, scale: &str) -> String {
     let (mut note_name, any_acc) = note_and_acc(note, acc);
-    if note_name == 'X' { return "".to_string() }
-    if any_acc   == 'X' { return "".to_string() }
+    if note_name == 'X' { return "Please enter one of correct note names: C D E F G A H or B".to_string() }
+    if any_acc   == 'X' { return "Please enter # or b or live it empty ' '".to_string() }
 
     let mut swap = false;
     if note == 'E' && any_acc == '#' {
