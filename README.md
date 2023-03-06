@@ -3,7 +3,7 @@
 This library builds any diatonic scale from any root note
 
 Run:
-'''
+'''bash
 cargo run --bin harmony
 '''
 
